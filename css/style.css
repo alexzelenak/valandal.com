@@ -129,6 +129,7 @@ header h2 {
 	margin: 0 94px;
 	padding: 48px 0 0;
 	background: transparent url(../img/bg-border-top.gif) repeat-x;
+	z-index: -1;
 }
 
 header h2 span {
