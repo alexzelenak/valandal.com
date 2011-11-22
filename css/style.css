@@ -88,6 +88,14 @@ html {
 body {
 	font-family: 'sans', arial, helvetica, sans-serif;
 	color: #666;
+	position: relative;
+}
+
+iframe {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: -1000px;
 }
 
 header,
