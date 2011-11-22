@@ -277,6 +277,12 @@ header ul li.active a span:before {
 		background-size: 8px 5px;
 	}
 	
+	header ul,
+	header ul li {
+		display: block;
+		float: none;
+	}
+	
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
