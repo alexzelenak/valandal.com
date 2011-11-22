@@ -255,7 +255,7 @@ header ul li.active a span:before {
 	transform: rotate(135deg);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 480px) {
   
 	header,
 	header hgroup,
