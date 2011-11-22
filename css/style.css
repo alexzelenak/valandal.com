@@ -76,6 +76,11 @@ td { vertical-align: top; }
     font-style: normal;
 }
 
+html,
+body {
+	height: 100%;
+} 
+
 html {
 	background: transparent url(../img/bg.gif);
 }
@@ -88,7 +93,8 @@ body {
 header,
 footer,
 #muah {
-	position: fixed;
+	position: fixed !important;
+	position: absolute; /*ie6 and above*/
 	width: 100%;
 }
 
