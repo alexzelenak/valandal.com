@@ -88,7 +88,6 @@ html {
 body {
 	font-family: 'sans', arial, helvetica, sans-serif;
 	color: #666;
-	position: relative;
 }
 
 iframe {
@@ -129,7 +128,6 @@ header h2 {
 	margin: 0 94px;
 	padding: 48px 0 0;
 	background: transparent url(../img/bg-border-top.gif) repeat-x;
-	z-index: -1;
 }
 
 header h2 span {
@@ -177,6 +175,10 @@ header ul li.active a {
 
 #container {
 	background: transparent url(../img/bg-border-left.gif) repeat-y left top;
+	position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 #container-inner {
