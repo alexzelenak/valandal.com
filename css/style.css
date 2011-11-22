@@ -255,7 +255,7 @@ header ul li.active a span:before {
 	transform: rotate(135deg);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
 	header,
 	header hgroup,
 	footer,
@@ -276,23 +276,6 @@ header ul li.active a span:before {
 }
 
 @media screen and (max-width: 480px) {
-	header,
-	header hgroup,
-	footer,
-	#footer-inner {
-		background-size: 47px 53px;
-	}
-	header h2 {
-		background-size: 5px 8px;
-		margin: 0 47px;
-		padding: 24px 6px 0;
-		font-size: 10px;
-		line-height: 12px;
-	}
-	#container,
-	#container-inner {
-		background-size: 8px 5px;
-	}
 	header h2 {
 		font-size: 11px;
 		line-height: 13px;
