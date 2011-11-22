@@ -255,8 +255,7 @@ header ul li.active a span:before {
 	transform: rotate(135deg);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-@media screen and (max-width: 480px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
 	header,
 	header hgroup,
 	footer,
