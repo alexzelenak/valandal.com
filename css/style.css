@@ -127,7 +127,6 @@ header h2 span {
 
 header ul {
 	display: inline-block;
-	overflow: hidden;
 	padding: 0;
 }
 
@@ -138,6 +137,9 @@ header ul li {
 	overflow: hidden;
 	padding: 1px;
 	border-radius: 2px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 header ul li a,
@@ -148,6 +150,11 @@ header ul li a:visited {
 	color: #6AD9D1;
 	padding: 16px 20px 14px;
 	text-shadow: 0 1px #FFF;
+	background-color: rgba(255, 255, 255, 0.55);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+	-webkit-box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
+	-moz-box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
+	box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
 }
 
 header ul li.active a {
@@ -250,6 +257,14 @@ header ul li.active a span:before {
 	-ms-transform: rotate(135deg);
 	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+	header hgroup {
+		background-size: 47px 53px;
+	}
+
 }
 
 /* ==|== non-semantic helper classes ======================================== */
