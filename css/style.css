@@ -90,6 +90,16 @@ body {
 	color: #666;
 }
 
+.ie6 img,
+.ie6 .png {
+       position: relative;
+       behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+       this.src = "img/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+       this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
 iframe {
 	width: 1px;
 	height: 1px;
@@ -108,12 +118,22 @@ footer,
 header {
 	top: 0;
 	text-align: center;
-	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
 	z-index: 999;
+	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
+}
+
+.ie6 header {
+	background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-left.png',sizingMethod='crop');
 }
 
 header hgroup {
 	background: transparent url(../img/bg-corner-top-right.png) no-repeat right top;
+}
+
+.ie6 header hgroup {
+	background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-right.png',sizingMethod='crop');
 }
 
 header h1 img {
@@ -196,13 +216,21 @@ header ul li.active a {
 footer {
 	bottom: 0;
 	background: transparent url(../img/bg-corner-bottom-left.png) no-repeat left bottom;
-	_background:none;
-    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-left.png',sizingMethod='crop');
+}
+
+.ie6 footer {
+	background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-left.png',sizingMethod='crop');
 }
 
 #footer-inner {
-	background: transparent url(../img/bg-corner-bottom-right.png) no-repeat right bottom;
 	height: 106px;
+	background: transparent url(../img/bg-corner-bottom-right.png) no-repeat right bottom;
+}
+
+.ie6 #footer-inner {
+	background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-right.png',sizingMethod='crop');
 }
 
 #muah {
