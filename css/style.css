@@ -272,6 +272,8 @@ header ul li.active a span:before {
 		background-size: 5px 8px;
 		margin: 0 47px;
 		padding: 24px 6px 0;
+		font-size: 10px;
+		line-height: 12px;
 	}
 	
 	#container,
