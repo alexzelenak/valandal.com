@@ -123,15 +123,13 @@ header h2 span {
 
 header ul {
 	display: inline-block;
+	margin: 0;
 	padding: 0;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
 }
 
 header ul li {
 	list-style-type: none;
-	display: inline-block;
+	float: left;
 	position: relative;
 	overflow: hidden;
 	padding: 1px;
@@ -299,9 +297,6 @@ header ul li.active a span:before {
 	header h2 {
 		font-size: 11px;
 		line-height: 13px;
-	}
-	header ul {
-		position: static;
 	}
 	header ul,
 	header ul li {
