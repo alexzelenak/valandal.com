@@ -301,7 +301,7 @@ header ul li.active a span:before {
 		line-height: 13px;
 	}
 	header ul {
-		position: static
+		position: static;
 	}
 	header ul,
 	header ul li {
