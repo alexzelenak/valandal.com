@@ -110,20 +110,14 @@ header {
 	text-align: center;
 	z-index: 999;
 	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
-}
-
-.ie6 header {
-	background:none;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-left.png',sizingMethod='crop');
+	_background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-left.png',sizingMethod='crop');
 }
 
 header hgroup {
 	background: transparent url(../img/bg-corner-top-right.png) no-repeat right top;
-}
-
-.ie6 header hgroup {
-	background:none;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-right.png',sizingMethod='crop');
+	_background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-top-right.png',sizingMethod='crop');
 }
 
 header h1 img {
@@ -206,21 +200,15 @@ header ul li.active a {
 footer {
 	bottom: 0;
 	background: transparent url(../img/bg-corner-bottom-left.png) no-repeat left bottom;
-}
-
-.ie6 footer {
-	background:none;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-left.png',sizingMethod='crop');
+	_background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-left.png',sizingMethod='crop');
 }
 
 #footer-inner {
 	height: 106px;
 	background: transparent url(../img/bg-corner-bottom-right.png) no-repeat right bottom;
-}
-
-.ie6 #footer-inner {
-	background:none;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-right.png',sizingMethod='crop');
+	_background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-right.png',sizingMethod='crop');
 }
 
 #muah {
