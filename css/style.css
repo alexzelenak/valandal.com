@@ -261,10 +261,17 @@ header ul li.active a span:before {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   
-	header hgroup {
+	header,
+	header hgroup,
+	footer,
+	#footer-inner {
 		background-size: 47px 53px;
 	}
-
+	
+	header h2 {
+		background-size: 5px 8px;
+	}
+	
 }
 
 /* ==|== non-semantic helper classes ======================================== */
