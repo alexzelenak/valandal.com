@@ -121,8 +121,6 @@ header h1 img {
 }
 
 header h2 {
-	display: inline;
-	display: block;
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: normal;
@@ -196,8 +194,10 @@ header ul li.active a {
 }
 
 footer {
-	background: transparent url(../img/bg-corner-bottom-left.png) no-repeat left bottom;
 	bottom: 0;
+	background: transparent url(../img/bg-corner-bottom-left.png) no-repeat left bottom;
+	_background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bg-corner-bottom-left.png',sizingMethod='crop');
 }
 
 #footer-inner {
