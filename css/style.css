@@ -334,7 +334,8 @@ header ul li.active a span:before {
 		line-height: 13px;
 	}
 	header ul,
-	header ul li {
+	header ul li,
+	header ul li a {
 		display: block;
 		float: none;
 	}
