@@ -126,6 +126,10 @@ header hgroup {
 	background: transparent url(../img/bg-corner-top-right.png) no-repeat right top;
 }
 
+header h1 {
+	margin: 10px 0;
+}
+
 header h1 img {
 	max-width: 100%;
 }
