@@ -150,15 +150,9 @@ header ul {
 	padding: 0;
 }
 
-.ie6 header ul,
-.ie7 header ul {
-	zoom: 1;
-	display: inline;
-}
-
 header ul li {
 	list-style-type: none;
-	float: left;
+	display: inline-block;
 	position: relative;
 	overflow: hidden;
 	padding: 1px;
@@ -168,9 +162,17 @@ header ul li {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+.ie6 header ul,
+.ie6 header ul li,
+.ie7 header ul,
+.ie7 header ul li {
+	zoom: 1;
+	display: inline;
+}
+
 header ul li a,
 header ul li a:visited {
-	display: block;
+	float: left;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #6AD9D1;
