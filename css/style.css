@@ -158,7 +158,6 @@ header ul {
 header ul li {
 	list-style-type: none;
 	float: left;
-	position: relative;
 	overflow: hidden;
 	padding: 1px;
 	border-radius: 2px;
