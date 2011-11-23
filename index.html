@@ -24,6 +24,11 @@
 
   <div id="container">
   	<div id="container-inner">
+  		<div id="top">
+  			<div id="top-inner">
+  				<hr />
+  			</div>
+  		</div>
 	    <header>
 			<hgroup>
 				<h2>
@@ -42,11 +47,47 @@
 			</ul>
 	    </header>
 	    <div id="main" role="main">
-			<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ" width="760" height="931" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	    	<section id="pages">
+				<article id="page-rsvp">
+					<h2>RSVP</h2>
+					<iframe id="gformFrame" name="gformFrame" src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ"></iframe>
+					<form id="rsvp-form" method="POST" target="gformFrame" action="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ">
+						<fieldset>
+							<!-- BEGIN SLEXXX FORM -->
+							<div class="form-section">
+								<label for="rsvp-name">Full Name</label>
+								<input placeholder="Type name here" type="text" name="entry.0.single" id="rsvp-name" />
+							</div>
+							<div class="form-section">
+								<label for="rsvp-count">Total attending <span class="subtext">(Including yourself)</span></label>
+								<select name="entry.1.single" id="rsvp-count">
+									<option value="">Select one</option>
+									<option value="0">Cannot Attend</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+							<div class="form-buttons">
+								<input type="hidden" name="pageNumber" /><input type="hidden" name="backupCache" />
+								<input id="rsvp-submit" class="submit-btn" type="submit" name="submit" value="Submit" />
+							</div>
+							<!-- END SLEXXX FORM -->
+						</fieldset>
+					</form>
+				</article>
+			</section>
 		</div>
 	    <footer>
 			<div id="footer-inner">
-				
+				<hr />
 			</div>
 	    </footer>
     </div>

@@ -101,13 +101,16 @@ body {
 }
 
 iframe {
-	width: 1px;
-	height: 1px;
+	width: 0px;
+	height: 0px;
+	margin: 0;
+	padding: 0;
+	border: none;
 	position: absolute;
 	top: -1000px;
 }
 
-header,
+#top,
 footer,
 #muah {
 	position: fixed !important;
@@ -115,15 +118,49 @@ footer,
 	width: 100%;
 }
 
-header {
-	top: 0;
-	text-align: center;
+#top,
+#top-inner,
+footer,
+#footer-inner {
+	height: 106px;
 	z-index: 999;
+}
+
+#top {
+	top: 0;
 	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
 }
 
-header hgroup {
+#top-inner {
 	background: transparent url(../img/bg-corner-top-right.png) no-repeat right top;
+}
+
+#top-inner,
+#footer-inner {
+	margin-left: 94px;
+}
+
+#top-inner hr,
+#footer-inner hr {
+	height: 16px;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+#top-inner hr {
+	background: transparent url(../img/bg-border-top.gif) repeat-x;
+}
+
+#footer-inner hr {
+	background: transparent url(../img/bg-border-bottom.gif) repeat-x;
+	bottom: 0;
+}
+
+header {
+	text-align: center;
 }
 
 header h1 {
@@ -141,7 +178,6 @@ header h2 {
 	text-shadow: 0 1px #FFF;
 	margin: 0 94px;
 	padding: 48px 0 0;
-	background: transparent url(../img/bg-border-top.gif) repeat-x;
 }
 
 header h2 span {
@@ -208,7 +244,12 @@ header ul li.active a:visited {
 }
 
 #main {
-	min-height: 3000px;
+	min-height: 1000px;
+}
+
+#pages {
+	padding: 0 10%;
+	width: 50%;
 }
 
 footer {
@@ -217,13 +258,13 @@ footer {
 }
 
 #footer-inner {
-	height: 106px;
 	background: transparent url(../img/bg-corner-bottom-right.png) no-repeat right bottom;
 }
 
 #muah {
 	bottom: 0;
-	z-index: -1;
+	right: -20%;
+	z-index: -2;
 }
 
 #muah img {
@@ -296,14 +337,22 @@ header ul li.active a span:before {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	header,
-	header hgroup,
+	#top,
+	#top-inner,
 	footer,
 	#footer-inner {
 		background-size: 47px 53px;
 	}
-	header h2 {
+	#top-inner,
+	#footer-inner {
+		margin-left: 47px;
+	}
+	#top-inner hr,
+	#footer-inner hr {
+		height: 8px;
 		background-size: 5px 8px;
+	}
+	header h2 {
 		margin: 0 47px;
 		padding: 24px 6px 0;
 		font-size: 10px;
@@ -316,32 +365,42 @@ header ul li.active a span:before {
 }
 
 @media screen and (max-width: 450px) {
-	header,
-	header hgroup,
+	#top,
+	#top-inner,
 	footer,
 	#footer-inner {
 		background-size: 47px 53px;
 	}
-	header h2 {
+	#top-inner,
+	#footer-inner {
+		margin-left: 47px;
+	}
+	#top-inner hr,
+	#footer-inner hr {
+		height: 8px;
 		background-size: 5px 8px;
+	}
+	header h2 {
 		margin: 0 47px;
 		padding: 24px 6px 0;
-		font-size: 10px;
-		line-height: 12px;
+		font-size: 11px;
+		line-height: 13px;
 	}
 	#container,
 	#container-inner {
 		background-size: 8px 5px;
-	}
-	header h2 {
-		font-size: 11px;
-		line-height: 13px;
 	}
 	header ul,
 	header ul li,
 	header ul li a {
 		display: block;
 		float: none;
+	}
+	#muah {
+		right: 0%;
+	}
+	#pages {
+		width: auto;
 	}
 }
 
