@@ -83,8 +83,13 @@ td { vertical-align: top; }
 html,
 body {
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 } 
+
+.ie6 html,
+.ie6 body {
+	overflow: hidden;
+}
 
 html {
 	background: transparent url(../img/bg.gif);
