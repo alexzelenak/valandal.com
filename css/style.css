@@ -151,8 +151,8 @@ footer,
 	margin-left: 94px;
 }
 
-#top-inner hr,
-#footer-inner hr {
+#top-inner .hr,
+#footer-inner .hr {
 	height: 16px;
 	margin: 0;
 	border: 0;
@@ -161,32 +161,13 @@ footer,
 	z-index: -1;
 }
 
-#top-inner hr {
+#top-inner .hr {
 	background: transparent url(../img/bg-border-top.gif) repeat-x;
 }
 
-#footer-inner hr {
+#footer-inner .hr {
 	background: transparent url(../img/bg-border-bottom.gif) repeat-x;
 	bottom: 0;
-}
-
-.ie6 #top-inner hr,
-.ie6 #footer-inner hr,
-.ie7 #top-inner hr,
-.ie7 #footer-inner hr {
-	display: list-item;
-    filter: alpha(opacity=0);
-    width: 0;
-}
-
-.ie6 #top-inner hr,
-.ie7 #top-inner hr {
-    list-style: url(bg-border-top.gif) inside;
-}
-
-.ie6 #footer-inner hr,
-.ie7 #footer-inner hr {
-    list-style: url(bg-border-bottom.gif) inside;
 }
 
 header {
@@ -409,8 +390,8 @@ header ul li.active a span:before {
 	#footer-inner {
 		margin-left: 47px;
 	}
-	#top-inner hr,
-	#footer-inner hr {
+	#top-inner .hr,
+	#footer-inner .hr {
 		height: 8px;
 		background-size: 5px 8px;
 	}
@@ -437,8 +418,8 @@ header ul li.active a span:before {
 	#footer-inner {
 		margin-left: 47px;
 	}
-	#top-inner hr,
-	#footer-inner hr {
+	#top-inner .hr,
+	#footer-inner .hr {
 		height: 8px;
 		background-size: 5px 8px;
 	}
