@@ -218,9 +218,6 @@ header ul li a:visited {
 	text-shadow: 0 1px #FFF;
 	background-color: rgba(255, 255, 255, 0.55);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-	-webkit-box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
-	-moz-box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
-	box-shadow: inset 0 5px 0 rgba(255, 255, 255, 0.55);
 }
 
 header ul li.active a,
@@ -248,8 +245,8 @@ header ul li.active a:visited {
 }
 
 #pages {
-	padding: 0 10%;
-	width: 50%;
+	padding: 40px 10%;
+	width: 40%;
 }
 
 footer {
@@ -271,10 +268,36 @@ footer {
 	width: 100%;
 }
 
-/* Top Corner Effect */
+article {
+	position: relative;
+	padding: 40px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+/* Top Left Corner Effect */
+article h2:before {
+	background: transparent url(../img/bg.gif);
+	content: '';
+	height: 50px;
+	position: absolute;
+	top: -25px;
+	left: -50px;
+	width: 100px;
+	z-index: 10;
+	-webkit-box-shadow: 0 6px 6px -6px hsla(0,0%,0%,.25);
+	-moz-box-shadow: 0 6px 6px -6px hsla(0,0%,0%,.25);
+	box-shadow: 0 6px 6px -6px hsla(0,0%,0%,.25);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/*Top Corner Effect 
 header ul li.active a:after,
 header ul li.active a:before {
-	background: #FFF;
+	background: #DDD;
 	content: '';
 	height: 20px;
 	position: absolute;
@@ -304,10 +327,10 @@ header ul li.active a:before {
 	transform: rotate(45deg);
 }
 
-/* Bottom Corner Effect */
+Bottom Corner Effect
 header ul li.active a span:after,
 header ul li.active a span:before {
-	background: #FFF;
+	background: #DDD;
 	content: '';
 	height: 20px;
 	position: absolute;
@@ -335,6 +358,7 @@ header ul li.active a span:before {
 	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
 }
+*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	#top,
