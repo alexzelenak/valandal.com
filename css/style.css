@@ -122,7 +122,7 @@ header {
 	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
 }
 
-header hgroup {
+header .hgroup {
 	background: transparent url(../img/bg-corner-top-right.png) no-repeat right top;
 }
 
@@ -145,7 +145,7 @@ header h2 span {
 }
 
 header ul {
-	display: inline-table;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 }
@@ -293,7 +293,7 @@ header ul li.active a span:before {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	header,
-	header hgroup,
+	header .hgroup,
 	footer,
 	#footer-inner {
 		background-size: 47px 53px;
@@ -313,7 +313,7 @@ header ul li.active a span:before {
 
 @media screen and (max-width: 450px) {
 	header,
-	header hgroup,
+	header .hgroup,
 	footer,
 	#footer-inner {
 		background-size: 47px 53px;
