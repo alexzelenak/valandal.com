@@ -122,9 +122,9 @@ footer,
 	width: 100%;
 }
 
-.ie6 #top,
-.ie6 footer,
-.ie6 #muah {
+* html #top,
+* html footer,
+* html #muah {
 	position: absolute; /*ie6 and above*/
 }
 
