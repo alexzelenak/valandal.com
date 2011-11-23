@@ -239,21 +239,23 @@ header ul li.active a:visited {
 	text-shadow: 0 1px rgba(0,0,0,0.25);
 }
 
+#container {
+	background: transparent url(../img/bg-border-left.gif) repeat-y left top;
+}
+
+#container-inner {
+	background: transparent url(../img/bg-border-right.gif) repeat-y right top;
+}
+
 .ie6 #container,
 .ie6 #container-inner {
 	height: 100%;
 }
 
-#container {
-	background: transparent url(../img/bg-border-left.gif) repeat-y left top;
+.ie6 #container {
 	position: relative;
     width: 100%;
-    height: 100%;
     overflow: auto;
-}
-
-#container-inner {
-	background: transparent url(../img/bg-border-right.gif) repeat-y right top;
 }
 
 #main {
