@@ -83,16 +83,18 @@ td { vertical-align: top; }
 html,
 body {
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 } 
 
-html {
-	background: transparent url(../img/bg.gif);
+html.ie6,
+html.ie6 body {
+	overflow: hidden;
 }
 
 body {
 	font-family: 'sans', arial, helvetica, sans-serif;
 	color: #666;
+	background: transparent url(../img/bg.gif);
 }
 
 .ie6 img,
