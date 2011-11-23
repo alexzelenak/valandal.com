@@ -245,8 +245,10 @@ header ul li.active a:visited {
 }
 
 #pages {
-	padding: 40px 10%;
-	width: 40%;
+	margin: 0 8%;
+    overflow: hidden;
+    padding: 2%;
+    width: 40%;
 }
 
 footer {
@@ -294,7 +296,8 @@ article h2:before {
 	transform: rotate(-45deg);
 }
 
-/*Top Corner Effect 
+/*
+Top Corner Effect 
 header ul li.active a:after,
 header ul li.active a:before {
 	background: #DDD;
