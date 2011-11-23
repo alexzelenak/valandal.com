@@ -148,7 +148,6 @@ header ul {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
 
 .ie6 header ul,
@@ -171,7 +170,7 @@ header ul li {
 
 header ul li a,
 header ul li a:visited {
-	float: left;
+	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #6AD9D1;
