@@ -151,13 +151,14 @@ header ul {
 }
 
 .ie6 header ul {
-	display: inline;
 	zoom: 1;
+	display: inline;
 }
 
 header ul li {
 	list-style-type: none;
 	float: left;
+	position: relative;
 	overflow: hidden;
 	padding: 1px;
 	border-radius: 2px;
