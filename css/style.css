@@ -168,7 +168,7 @@ header ul li {
 
 header ul li a,
 header ul li a:visited {
-	display: block;
+	float: left;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #6AD9D1;
