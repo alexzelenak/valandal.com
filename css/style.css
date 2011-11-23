@@ -152,6 +152,7 @@ header ul {
 
 .ie6 header ul {
 	display: inline;
+	zoom: 1;
 }
 
 header ul li {
