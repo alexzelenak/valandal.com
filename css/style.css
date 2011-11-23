@@ -201,7 +201,6 @@ header ul li.active a {
 
 #container {
 	position: relative;
-	overflow: auto;
 	background: transparent url(../img/bg-border-left.gif) repeat-y left top;
 }
 
