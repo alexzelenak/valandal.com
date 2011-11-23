@@ -176,7 +176,6 @@ footer,
 .ie7 #footer-inner hr {
 	display: list-item;
     filter: alpha(opacity=0);
-    width: 0;
 }
 
 .ie6 #top-inner hr,
