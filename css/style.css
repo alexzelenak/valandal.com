@@ -83,7 +83,7 @@ td { vertical-align: top; }
 html,
 body {
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 } 
 
 html {
