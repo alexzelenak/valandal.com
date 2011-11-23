@@ -150,8 +150,8 @@ header ul {
 	padding: 0;
 }
 
-.ie6 header ul {
-	position: relative;
+.ie6 header ul,
+.ie7 header ul {
 	zoom: 1;
 	display: inline;
 }
