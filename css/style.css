@@ -161,6 +161,15 @@ footer,
 	z-index: -1;
 }
 
+#top-inner hr {
+	background: transparent url(../img/bg-border-top.gif) repeat-x;
+}
+
+#footer-inner hr {
+	background: transparent url(../img/bg-border-bottom.gif) repeat-x;
+	bottom: 0;
+}
+
 .ie6 #top-inner hr,
 .ie6 #footer-inner hr,
 .ie7 #top-inner hr,
@@ -178,15 +187,6 @@ footer,
 .ie6 #footer-inner hr,
 .ie7 #footer-inner hr {
     list-style: url(../img/bg-border-bottom.gif) inside;
-}
-
-#top-inner hr {
-	background: transparent url(../img/bg-border-top.gif) repeat-x;
-}
-
-#footer-inner hr {
-	background: transparent url(../img/bg-border-bottom.gif) repeat-x;
-	bottom: 0;
 }
 
 header {
