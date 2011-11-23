@@ -176,16 +176,17 @@ footer,
 .ie7 #footer-inner hr {
 	display: list-item;
     filter: alpha(opacity=0);
+    width: 0;
 }
 
 .ie6 #top-inner hr,
 .ie7 #top-inner hr {
-    list-style: url(../img/bg-border-top.gif) inside;
+    list-style: url(bg-border-top.gif) inside;
 }
 
 .ie6 #footer-inner hr,
 .ie7 #footer-inner hr {
-    list-style: url(../img/bg-border-bottom.gif) inside;
+    list-style: url(bg-border-bottom.gif) inside;
 }
 
 header {
