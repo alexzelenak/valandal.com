@@ -145,7 +145,6 @@ header h2 span {
 }
 
 header ul {
-	display: inline-block;
 	margin: 0;
 	padding: 0;
 }
@@ -162,9 +161,7 @@ header ul li {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.ie6 header ul,
 .ie6 header ul li,
-.ie7 header ul,
 .ie7 header ul li {
 	zoom: 1;
 	display: inline;
