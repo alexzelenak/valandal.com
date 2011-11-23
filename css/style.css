@@ -138,6 +138,7 @@ footer,
 
 #top {
 	top: 0;
+	left: 0;
 	background: transparent url(../img/bg-corner-top-left.png) no-repeat left top;
 }
 
@@ -266,6 +267,7 @@ header ul li.active a:visited {
 }
 
 footer {
+	left: 0;
 	bottom: 0;
 	background: transparent url(../img/bg-corner-bottom-left.png) no-repeat left bottom;
 }
