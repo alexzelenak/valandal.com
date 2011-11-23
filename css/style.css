@@ -89,6 +89,9 @@ body {
 	font-family: 'sans', arial, helvetica, sans-serif;
 	color: #666;
 	position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .ie6 img,
