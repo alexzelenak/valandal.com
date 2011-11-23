@@ -114,9 +114,14 @@ iframe {
 #top,
 footer,
 #muah {
-	position: fixed !important;
-	position: absolute; /*ie6 and above*/
+	position: fixed;
 	width: 100%;
+}
+
+.ie6 #top,
+.ie6 footer,
+.ie6 #muah {
+	position: absolute; /*ie6 and above*/
 }
 
 #top,
