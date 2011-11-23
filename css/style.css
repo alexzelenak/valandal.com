@@ -161,8 +161,10 @@ footer,
 	z-index: -1;
 }
 
-.ie6 hr,
-.ie7 hr {
+.ie6 #top-inner hr,
+.ie6 #footer-inner hr,
+.ie7 #top-inner hr,
+.ie7 #footer-inner hr {
 	display: list-item;
     filter: alpha(opacity=0);
     width: 0;
