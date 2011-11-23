@@ -83,13 +83,8 @@ td { vertical-align: top; }
 html,
 body {
 	height: 100%;
-	overflow: auto;
-} 
-
-.ie6 html,
-.ie6 body {
 	overflow: hidden;
-}
+} 
 
 html {
 	background: transparent url(../img/bg.gif);
@@ -215,13 +210,17 @@ header ul {
 header ul li {
 	list-style-type: none;
 	float: left;
-	/* position: relative; */
+	position: relative;
 	overflow: hidden;
 	padding: 1px;
 	border-radius: 2px;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.ie6 header ul li {
+	position: static;
 }
 
 header ul li a,
@@ -292,9 +291,13 @@ footer {
 }
 
 article {
-	/* position: relative; */
+	position: relative;
 	padding: 40px;
 	background-color: rgba(255,255,255,0.5);
+}
+
+.ie6 article {
+	position: static;
 }
 
 /* Top Left Corner Effect */
