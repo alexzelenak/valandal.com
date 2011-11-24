@@ -504,6 +504,7 @@ header ul li.active a span:before {
 	}
 	#pages {
 		width: auto;
+		margin: 0 2%;
 	}
 }
 
