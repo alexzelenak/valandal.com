@@ -243,12 +243,21 @@ header ul li a:visited {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
+header ul li a:hover {
+	background-color: #FFFCE8;
+	-moz-transition: background-color .3s ease-in;
+	-o-transition: background-color .3s ease-in;
+	-webkit-transition: background-color .3s ease-in;
+	transition: background-color .3s ease-in;
+}
+
 header ul li.active a,
 header ul li.active a:visited {
 	background-color: #6AD9D1;
 	color: #FFF;
 	text-shadow: 0 1px rgba(0,0,0,0.25);
 	border-bottom: 1px solid #6AD9D1;
+	cursor: default;
 }
 
 #container {
@@ -303,9 +312,9 @@ footer {
 
 article {
 	position: relative;
-	padding: 40px;
-	background-color: rgba(255,255,255,0.5);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+	padding: 30px;
+	border: 10px solid #FFF;
+	background-color: rgba(255,252,232,0.75);
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
