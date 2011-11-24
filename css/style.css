@@ -191,6 +191,7 @@ header h1 img {
 }
 
 header h2 {
+	color: #999;
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: normal;
@@ -331,11 +332,18 @@ article h2 {
 	text-shadow: 0 1px #FFF;
 	color: #6AD9D1;
 	font-size: 30px;
+	text-transform: uppercase;
 	/*
 	font-family: 'script';
 	font-size-adjust: 0.5;
 	text-transform: lowercase;
 	*/
+}
+
+article ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
 }
 
 /* Top Left Corner Effect */
