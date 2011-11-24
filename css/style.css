@@ -343,6 +343,7 @@ article ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
+	margin: 0 0 20px;
 }
 
 article ul li.first {
