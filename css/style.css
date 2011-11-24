@@ -99,7 +99,7 @@ html.ie6 body {
 
 body {
 	font-family: 'sans', arial, helvetica, sans-serif;
-	color: #666;
+	color: #999;
 	background: transparent url(../img/bg.gif);
 }
 
@@ -191,7 +191,6 @@ header h1 img {
 }
 
 header h2 {
-	color: #999;
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: normal;
@@ -344,6 +343,12 @@ article ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
+}
+
+article ul li.first {
+	color: #666;
+	font-size: 15px;
+    line-height: 25px;
 }
 
 /* Top Left Corner Effect */
