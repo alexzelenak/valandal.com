@@ -91,6 +91,11 @@ td { vertical-align: top; }
     margin: 0;
 }
 
+a {
+	color: #666;
+	text-decoration: none;
+}
+
 html.ie6,
 html.ie6 body {
 	height: 100%;
