@@ -343,13 +343,13 @@ article ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 
 article ul li.first {
 	color: #666;
 	font-size: 15px;
-    line-height: 25px;
+	margin-bottom: 5px;
 }
 
 /* Top Left Corner Effect */
