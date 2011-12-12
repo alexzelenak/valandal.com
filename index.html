@@ -46,7 +46,7 @@
 	    <div id="main" role="main">
 	    	<section id="pages">
 	    		<article id="page-info">
-					<h2>Wedding Info</h2>
+					<h2>Info</h2>
 					<ul>
 						<li class="first">Saturday, March 3, 2012</li>
 						<li>5:30pm &ndash; 11:30pm</li>
@@ -57,43 +57,91 @@
 						<li>Austin, Texas</li>
 					</ul>
 				</article>
-	    		<!--
 				<article id="page-rsvp">
 					<h2>RSVP</h2>
 					<iframe id="gformFrame" name="gformFrame" src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ"></iframe>
-					<form id="rsvp-form" method="POST" target="gformFrame" action="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ">
-						
-						<fieldset>
-							<div class="form-section">
-								<label for="rsvp-name">Full Name</label>
-								<input placeholder="Type name here" type="text" name="entry.0.single" id="rsvp-name" />
+					<form target="gformFrame" action="https://docs.google.com/spreadsheet/formResponse?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ&amp;ifq" method="POST" id="ss-form rsvp-form">
+						<div class="rsvp-name errorbox-good">
+							<div class="ss-item ss-item-required ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_0">Your Full Name<span class="ss-required-asterisk">*</span></label>
+									<!-- <label class="ss-q-help" for="entry_0"></label> -->
+									<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
+								</div>
 							</div>
-							<div class="form-section">
-								<label for="rsvp-count">Total attending <span class="subtext">(Including yourself)</span></label>
-								<select name="entry.1.single" id="rsvp-count">
-									<option value="">Select one</option>
-									<option value="0">Cannot Attend</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-									<option value="10">10</option>
-								</select>
+						</div>
+						<div class="rsvp-email errorbox-good">
+							<div class="ss-item ss-item-required ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_4">Your Email<span class="ss-required-asterisk">*</span></label>
+									<!-- <label class="ss-q-help" for="entry_4"></label> -->
+									<input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4">
+								</div>
 							</div>
-							<div class="form-buttons">
-								<input type="hidden" name="pageNumber" /><input type="hidden" name="backupCache" />
-								<input id="rsvp-submit" class="submit-btn" type="submit" name="submit" value="Submit" />
+						</div>
+						<div class="rsvp-attend errorbox-good">
+							<div class="ss-item ss-item-required ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_2">Will you attend?<span class="ss-required-asterisk">*</span></label>
+									<!-- <label class="ss-q-help" for="entry_2"></label> -->
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" checked value="Yes" class="ss-q-radio" id="group_2_1">
+												Yes
+											</label>
+										</li>
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="No" class="ss-q-radio" id="group_2_2">
+												No
+											</label>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</fieldset>
-						
+						</div>
+						<div class="rsvp-party errorbox-good">
+							<div class="ss-item ss-item-required ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_1">How many in your party?<span class="ss-required-asterisk">*</span></label>
+									<label class="ss-q-help" for="entry_1">(including yourself)</label>
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="1" class="ss-q-radio" id="group_1_1">
+												1
+											</label>
+										</li>
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="2" class="ss-q-radio" id="group_1_2">
+												2
+											</label>
+										</li>
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+											<input type="radio" name="entry.1.group" value="3" class="ss-q-radio" id="group_1_3">
+												3</label>
+										</li>
+										<li class="ss-choice-item">
+											<input type="radio" name="entry.1.group" value="__option__" class="ss-q-radio" id="other_option:1">
+											<label for="other_option:1">Other</label>
+											<input type="text" name="entry.1.group.other_option_" value="" class="ss-q-other">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<input type="hidden" name="pageNumber" value="0">
+						<input type="hidden" name="backupCache" value="">
+						<div class="rsvp-submit ss-item ss-navigate">
+							<div class="ss-form-entry">
+								<input type="submit" name="submit" value="Submit">
+							</div>
+						</div>
 					</form>
 				</article>
-				-->
 			</section>
 		</div>
     </div>

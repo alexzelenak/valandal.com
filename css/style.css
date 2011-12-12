@@ -357,6 +357,88 @@ article ul li.first {
 	margin-bottom: 5px;
 }
 
+.rsvp-name,
+.rsvp-email,
+.rsvp-attend,
+.rsvp-party,
+.rsvp-submit {
+	clear: left;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.rsvp-submit {
+	margin: 0;
+	padding-left: 50%;
+}
+
+label.ss-q-title,
+label.ss-q-help {
+    clear: left;
+    float: left;
+    width: 50%;
+}
+
+label.ss-q-title {
+	padding: 8px 0 0;
+}
+
+.rsvp-attend ul,
+.rsvp-party ul {
+	float: left;
+	text-align: left;
+	margin: 0;
+}
+
+.rsvp-party ul {
+	margin-top: -30px;
+}
+
+.rsvp-attend ul li,
+.rsvp-party ul li {
+	padding: 6px 10px;
+	float: left;
+}
+
+.rsvp-name input,
+.rsvp-email input,
+.rsvp-attend ul,
+.rsvp-party ul {
+    width: 50%;
+    margin-left: -22px;
+}
+
+.rsvp-name input,
+.rsvp-email input,
+.rsvp-party input {
+    padding: 6px 10px 4px;
+	border: 1px solid #DDD;
+	font-family: 'sans';
+	font-size: 16px;
+}
+
+.rsvp-party input[type="radio"],
+.rsvp-party input.ss-q-radio {
+	margin-top: 10px;
+}
+
+.rsvp-party input[type="text"],
+.rsvp-party input.ss-q-other {
+	width: 16px;
+}
+
+.rsvp-submit input {
+	font-family: 'sans';
+	float: left;
+	margin-left: -22px;
+	background-color: #6AD9D1;
+	color: #FFF;
+	border: 1px solid #FFF;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-transform: lowercase;
+}
+
 /* Top Left Corner Effect */
 article h2:before {
 	background: transparent url(../img/bg.gif);
