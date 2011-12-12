@@ -118,7 +118,7 @@ body {
        this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
 }
 
-iframe {
+#page-rsvp iframe {
 	width: 0px;
 	height: 0px;
 	margin: 0;
@@ -356,6 +356,35 @@ article ul li.first {
 	color: #666;
 	font-size: 15px;
 	margin-bottom: 5px;
+}
+
+#page-rsvp {
+	min-height: 284px;
+}
+
+.ie6 #page-rsvp {
+	height: auto !important;
+	height: 284px;
+}
+
+#page-rsvp h3 {
+	color: #666;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.rsvp-form-submit-attending,
+.rsvp-form-submit-not-attending {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.smiley {
+	white-space: nowrap;
+	color: #333;
 }
 
 .rsvp-name,
