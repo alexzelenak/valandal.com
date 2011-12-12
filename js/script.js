@@ -2,11 +2,15 @@
 
 $(document).ready(function(){
 	
-	$('.rsvp-attend-yes input').focus(function(){
-		$('.rsvp-party').addClass('form-section-focus');
+	$('.rsvp-attend-yes input').change(function(){
+		if ( $(this).is(":checked") ) {
+			$('.rsvp-party').addClass('form-section-focus');
+		}
 	});
-	$('.rsvp-attend-no input').focus(function(){
-		$('.rsvp-party').removeClass('form-section-focus');
+	$('.rsvp-attend-no input').change(function(){
+		if ( $(this).is(":checked") ) {
+			$('.rsvp-party').removeClass('form-section-focus');
+		}
 	});
 	
 });
