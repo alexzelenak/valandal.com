@@ -61,7 +61,7 @@
 					<h2>RSVP</h2>
 					<iframe id="gformFrame" name="gformFrame" src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ"></iframe>
 					<form target="gformFrame" action="https://docs.google.com/spreadsheet/formResponse?formkey=dFNub1B2bWNhUVdtSW5iX0RhUUVSa0E6MQ&amp;ifq" method="POST" id="ss-form rsvp-form">
-						<div class="rsvp-name errorbox-good">
+						<div class="rsvp-block rsvp-name errorbox-good">
 							<div class="ss-item ss-item-required ss-text">
 								<div class="ss-form-entry">
 									<label class="ss-q-title" for="entry_0">Your Full Name<span class="ss-required-asterisk">*</span></label>
@@ -70,7 +70,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="rsvp-email errorbox-good">
+						<div class="rsvp-block rsvp-email errorbox-good">
 							<div class="ss-item ss-item-required ss-text">
 								<div class="ss-form-entry">
 									<label class="ss-q-title" for="entry_4">Your Email<span class="ss-required-asterisk">*</span></label>
@@ -79,7 +79,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="rsvp-attend errorbox-good">
+						<div class="rsvp-block rsvp-attend errorbox-good">
 							<div class="ss-item ss-item-required ss-radio">
 								<div class="ss-form-entry">
 									<label class="ss-q-title" for="entry_2">Will you attend?<span class="ss-required-asterisk">*</span></label>
@@ -101,7 +101,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="rsvp-party errorbox-good">
+						<div class="rsvp-block rsvp-party errorbox-good">
 							<div class="ss-item ss-item-required ss-radio">
 								<div class="ss-form-entry">
 									<label class="ss-q-title" for="entry_1">How many in your party?<span class="ss-required-asterisk">*</span></label>
@@ -124,7 +124,7 @@
 											<input type="radio" name="entry.1.group" value="3" class="ss-q-radio" id="group_1_3">
 												3</label>
 										</li>
-										<li class="ss-choice-item">
+										<li class="rsvp-party-other ss-choice-item">
 											<input type="radio" name="entry.1.group" value="__option__" class="ss-q-radio" id="other_option:1">
 											<label for="other_option:1">Other</label>
 											<input type="text" name="entry.1.group.other_option_" value="" class="ss-q-other">

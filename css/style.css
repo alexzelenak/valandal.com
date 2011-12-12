@@ -454,6 +454,10 @@ label.ss-q-title {
 	text-transform: lowercase;
 }
 
+.rsvp-invalid label {
+	color: red;
+}
+
 #page-registry ul {
 	overflow: hidden;
 	zoom: 1;
