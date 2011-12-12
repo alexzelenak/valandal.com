@@ -454,8 +454,12 @@ label.ss-q-title {
 	text-transform: lowercase;
 }
 
-.rsvp-invalid label {
+.rsvp-invalid label.ss-q-title {
 	color: red;
+	-o-transition: all .3s;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 #page-registry ul {
