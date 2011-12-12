@@ -43,13 +43,13 @@ $(document).ready(function(){
 			$('.rsvp-attend-yes input').closest('.rsvp-block').addClass('rsvp-invalid');
 		}
 		else {
-			if ( ! $('.rsvp-party .ss-choices input:checked').length ) {
+			if ($('.rsvp-attend-yes input').is(':checked') && ! $('.rsvp-party .ss-choices input:checked').length ) {
 				invalid.push("How many?");
 				$('.rsvp-party input').closest('.rsvp-block').addClass('rsvp-invalid');
 			}
 			else {
 				if ( $('.rsvp-party-other input').first().is(':checked') ) {
-					if ( !$.trim($('.ss-q-other').val()).length ) {
+					if ($('.rsvp-attend-yes input').is(':checked') && !$.trim($('.ss-q-other').val()).length ) {
 						invalid.push("What other?");
 						$('.rsvp-party-other input').closest('.rsvp-block').addClass('rsvp-invalid');
 					}
@@ -64,13 +64,17 @@ $(document).ready(function(){
 		
 		// if they are attending
 		if ( $('.rsvp-attend-yes input').is(':checked') ) {
-			alert('Thanks for coming');
+			$('.rsvp-form').fadeOut(function () {
+				$('.rsvp-form-submit-attending').fadeIn();
+			});
 		}
+		// if they aren't
 		else {
-			alert('FUCKOFF');
+			$('.rsvp-form').fadeOut(function () {
+				$('.rsvp-form-submit-not-attending').fadeIn();
+			});
 		}
 		
-		// if they aren't
 	});
 	
 });

@@ -410,9 +410,30 @@ label.ss-q-title {
 }
 
 .rsvp-attend ul li,
-.rsvp-party ul li {
-	padding: 6px 10px;
+.rsvp-party ul li,
+.rsvp-attend ul li label,
+.rsvp-party ul li label,
+.rsvp-attend ul li input,
+.rsvp-party ul li input {
 	float: left;
+}
+
+.rsvp-attend ul li input,
+.rsvp-party ul li input {
+	margin-right: 10px;
+}
+
+.rsvp-attend ul li label,
+.rsvp-party ul li label {
+	padding: 8px 10px;
+}
+
+.rsvp-party ul li.rsvp-party-other label {
+	padding: 10px;
+}
+
+.rsvp-party ul li.rsvp-party-other input.ss-q-radio {
+	margin: 10px 0 10px 10px;
 }
 
 .rsvp-name input,
@@ -430,11 +451,6 @@ label.ss-q-title {
 	border: 1px solid #DDD;
 	font-family: 'sans';
 	font-size: 16px;
-}
-
-.rsvp-party input[type="radio"],
-.rsvp-party input.ss-q-radio {
-	margin-top: 10px;
 }
 
 .rsvp-party input[type="text"],
