@@ -454,6 +454,35 @@ label.ss-q-title {
 	text-transform: lowercase;
 }
 
+#page-registry ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+#page-registry ul li {
+	float: left;
+	width: 33.33%;
+}
+
+#page-registry ul li a {
+	display: block;
+	padding: 20px;
+}
+
+#page-registry ul li a img {
+	max-width: 100%;
+	margin-bottom: 20px;
+	opacity: .5;
+	-o-transition: all .3s;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#page-registry ul li a:hover img {
+	opacity: 1;
+}
+
 /* Top Left Corner Effect */
 article h2:before {
 	background: transparent url(../img/bg.gif);
