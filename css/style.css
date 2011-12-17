@@ -292,9 +292,9 @@ header ul li.active a:visited {
 }
 
 #pages {
-	margin: 240px 7% 0;
+	margin: 0 7%;
     overflow: hidden;
-    padding: 2%;
+    padding: 240px 2% 2%;
     width: 40%;
 }
 
@@ -316,6 +316,18 @@ footer {
 
 #muah img {
 	width: 100%;
+	-webkit-transition-delay: 2s;
+	-moz-transition-delay: 2s;
+	-o-transition-delay: 2s;
+	-ms-transition-delay: 2s;
+	-webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+	-webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
 }
 
 article {
