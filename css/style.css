@@ -188,8 +188,8 @@ header {
 	position: fixed;
 	width: 50%;
 	top: 0;
-	left: 50%;
-	margin-left: -25%;
+	right: 50%;
+	margin: 0 -25%;
 }
 
 header h1 {
