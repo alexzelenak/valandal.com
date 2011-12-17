@@ -85,7 +85,17 @@ $(document).ready(function(){
 			$("#muah img").addClass("tween");
 		}, seconds * 1000);
 	});
-
+	
+	$(function() {
+		$('.ss-q-short').focus(function(e){
+			$(this).addClass('focus');
+			e.preventDefault();
+		});
+		$('.ss-q-short').blur(function(e){
+			$(this).removeClass('focus');
+			e.preventDefault();
+		});
+	});
 });
 
 

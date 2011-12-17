@@ -316,10 +316,10 @@ footer {
 
 #muah img {
 	width: 100%;
-	-webkit-transition: all 15s, opacity 3s;
-    -moz-transition: all 15s, opacity 3s;
-    -o-transition: all 15s, opacity 3s;
-    -ms-transition: all 15s, opacity 3s;
+	-webkit-transition: all 15s ease, opacity 3s;
+    -moz-transition: all 15s ease, opacity 3s;
+    -o-transition: all 15s ease, opacity 3s;
+    -ms-transition: all 15s ease, opacity 3s;
     opacity: 0.2;
 }
 
@@ -493,14 +493,35 @@ label.ss-q-title {
 .rsvp-email input,
 .rsvp-party input {
     padding: 6px 10px 4px;
+    background-color: transparent;
 	border: 1px solid #DDD;
 	font-family: 'sans';
 	font-size: 16px;
+	outline: none;
+	-moz-transition: all ease-in-out .3s;
+	-webkit-transition: all ease-in-out .3s;
+	-ms-transition: all ease-in-out .3s;
+	-o-transition: all ease-in-out .3s;
+}
+
+.rsvp-name input:hover,
+.rsvp-email input:hover,
+.rsvp-party input:hover {
+	border: 1px solid #69DAD1;
+	background-color: #FFF;
+}
+
+.rsvp-name input.focus,
+.rsvp-email input.focus,
+.rsvp-party input.focus {
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #999;
 }
 
 .rsvp-party input[type="text"],
 .rsvp-party input.ss-q-other {
-	width: 16px;
+	width: 40px;
 }
 
 .rsvp-submit input {
