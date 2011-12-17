@@ -76,7 +76,16 @@ $(document).ready(function(){
 		}
 		
 	});
-	
+
+	$(function() {
+		//this code will run when the page is done loading
+		var seconds = 0; //this is how long the page will wait
+			window.setTimeout(function() {
+			//this code will run after a timeout
+			$("#muah img").addClass("tween");
+		}, seconds * 1000);
+	});
+
 });
 
 
