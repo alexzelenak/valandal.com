@@ -12,11 +12,20 @@ $(function() {
       scaledImage = false,
       timeout;
 
-  if (window.innerWidth < 1100)  {
-    $header.css({position: 'static'});
-    $("#pages").css({paddingTop: 0});
-    return;
+  function resetWindow() {
+    if (window.innerWidth < 1100)  {
+      $header.css({position: 'static'});
+      $("#pages").css({paddingTop: 0});
+      return true;
+    }
+    return false;
   }
+
+  $(window).resize(function() {
+    if ( resetWindow() ) {
+      
+    }
+  });
 
   $doc.scroll(function(e) {
     scrollY = window.scrollY;
@@ -30,6 +39,8 @@ $(function() {
 
     } else {
       toScroll = Math.max(scrollY * -1 * 3, -100 * 2.9);
+      console.log(toScroll);
+      //toScroll = (toScroll / ( -580 ) * 100;
       if(Modernizr.csstransforms) {
         $header.stop(true, false).animate({scale: .9, translateX: -1 * toScroll}, {queue: false}, 20);
       } else {
