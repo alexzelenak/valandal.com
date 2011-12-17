@@ -741,10 +741,14 @@ header ul li.active a span:before {
 		width: auto;
 		margin: 0 2%;
 	}
+  #header {
+    position: static;
+  }
 }
 
 @media only screen and (min-width: 480px) {}
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* ==|== print styles ======================================================= */
  
