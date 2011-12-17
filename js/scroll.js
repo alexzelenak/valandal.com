@@ -15,17 +15,22 @@ $(function() {
     scrollY = window.scrollY;
 
     if (scrollY < 2) {
-      $header.animate({right: 0}, 100);
-    } else if (scrollY < 500) {
-      toScroll = Math.max(scrollY * -3, -315);
-
-      $header.animate({right: toScroll}, {queue: false}, 60);
-      //header.style.right = toScroll + "px";
+      if(Modernizr.csstransforms) {
+        $header.stop(true, false).animate({scale: 1, translateX: 0}, {queue: false}, 100);
+      } else {
+        $header.stop(true, false).animate({right: 0}, {queue: false}, 100);
+      }
     } else {
-//probably nothing
-    }
+      toScroll = Math.max(scrollY * -1 * 2.9, -100 * 2.9);
 
-    console.log("ScrollY", scrollY);
+      if(Modernizr.csstransforms) {
+        $header.stop(true, false).animate({scale: .9, translateX: -1 * toScroll}, {queue: false}, 20);
+        //$header.css({right: toScroll});
+      } else {
+        $header.stop(true, false).animate({right: toScroll}, {queue: false}, 30);
+      }
+      //header.style.right = toScroll + "px";
+    }
 
     //cleanup
     prevScrollY = window.scrollY;
