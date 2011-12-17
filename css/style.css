@@ -316,18 +316,19 @@ footer {
 
 #muah img {
 	width: 100%;
-	-webkit-transition-delay: 2s;
-	-moz-transition-delay: 2s;
-	-o-transition-delay: 2s;
-	-ms-transition-delay: 2s;
-	-webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-	-webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
+	-webkit-transition: all 15s, opacity 3s;
+    -moz-transition: all 15s, opacity 3s;
+    -o-transition: all 15s, opacity 3s;
+    -ms-transition: all 15s, opacity 3s;
+    opacity: 0.2;
+}
+
+#muah img.tween {
+	-webkit-transform: scale(1.2) translate(-40px,-20px);
+    -moz-transform: scale(1.2) translate(-40px,-20px);
+    -o-transform: scale(1.2) translate(-40px,-20px);
+    -ms-transform: scale(1.2) translate(-40px,-20px);
+    opacity: 1;
 }
 
 article {
