@@ -42,9 +42,9 @@ $(function() {
       console.log(toScroll);
       //toScroll = (toScroll / ( -580 ) * 100;
       if(Modernizr.csstransforms) {
-        $header.stop(true, false).animate({scale: .9, translateX: -1 * toScroll}, {queue: false}, 20);
+        $header.stop(true, false).animate({scale: 1, translateX: -1 * toScroll}, {queue: false}, 20);
       } else {
-        $header.stop(true, false).animate({scale: .9, right: toScroll}, {queue: false}, 30);
+        $header.stop(true, false).animate({scale: 1, right: toScroll}, {queue: false}, 30);
       }
     }
 
