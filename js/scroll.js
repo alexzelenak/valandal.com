@@ -9,29 +9,37 @@ $(function() {
       height = window.outerHeight,
       firstBlockPadding = parseInt($("#pages").css('paddingTop')), // "200px" should parse to 200
       toScroll,
+      scaledImage = false,
       timeout;
+
+  if (window.innerWidth < 1100)  {
+    $header.css({position: 'static'});
+    $("#pages").css({paddingTop: 0});
+    return;
+  }
 
   $doc.scroll(function(e) {
     scrollY = window.scrollY;
 
-    if (scrollY < 2) {
+    if (scrollY < 10) {
       if(Modernizr.csstransforms) {
         $header.stop(true, false).animate({scale: 1, translateX: 0}, {queue: false}, 100);
       } else {
-        $header.stop(true, false).animate({right: 0}, {queue: false}, 100);
+        $header.stop(true, false).animate({scale: 1, right: 0}, {queue: false}, 100);
       }
-    } else {
-      toScroll = Math.max(scrollY * -1 * 2.9, -100 * 2.9);
 
+    } else {
+      toScroll = Math.max(scrollY * -1 * 3, -100 * 2.9);
       if(Modernizr.csstransforms) {
         $header.stop(true, false).animate({scale: .9, translateX: -1 * toScroll}, {queue: false}, 20);
-        //$header.css({right: toScroll});
       } else {
-        $header.stop(true, false).animate({right: toScroll}, {queue: false}, 30);
+        $header.stop(true, false).animate({scale: .9, right: toScroll}, {queue: false}, 30);
       }
-      //header.style.right = toScroll + "px";
     }
 
+    if ( !scaledImage ) {
+        $header.find('hgroup h2').css({width: "50%"});
+    }
     //cleanup
     prevScrollY = window.scrollY;
 
