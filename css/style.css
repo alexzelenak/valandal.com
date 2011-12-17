@@ -186,8 +186,10 @@ footer,
 header {
 	text-align: center;
 	position: fixed;
-	width: 100%;
+	width: 50%;
 	top: 0;
+	left: 50%;
+	margin-left: -25%;
 }
 
 header h1 {

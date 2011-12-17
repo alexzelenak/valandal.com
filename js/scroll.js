@@ -31,9 +31,9 @@ $(function() {
     } else {
       toScroll = Math.max(scrollY * -1 * 3, -100 * 2.9);
       if(Modernizr.csstransforms) {
-        $header.stop(true, false).animate({scale: .9, translateX: -1 * toScroll}, {queue: false}, 20);
+        $header.stop(true, false).animate({scale: 1, translateX: -1 * toScroll}, {queue: false}, 20);
       } else {
-        $header.stop(true, false).animate({scale: .9, right: toScroll}, {queue: false}, 30);
+        $header.stop(true, false).animate({scale: 1, right: toScroll}, {queue: false}, 30);
       }
     }
 
