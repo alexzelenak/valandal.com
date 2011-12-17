@@ -185,6 +185,9 @@ footer,
 
 header {
 	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 header h1 {
@@ -289,7 +292,7 @@ header ul li.active a:visited {
 }
 
 #pages {
-	margin: 0 7%;
+	margin: 240px 7% 0;
     overflow: hidden;
     padding: 2%;
     width: 40%;
