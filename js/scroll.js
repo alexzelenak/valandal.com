@@ -21,45 +21,28 @@ $(function() {
     return false;
   }
 
-  $(window).resize(function() {
-    if ( resetWindow() ) {
-      
-    }
-  });
-
+  var PUSH = 580;
   $doc.scroll(function(e) {
     scrollY = window.scrollY;
 
     if (scrollY < 10) {
-      if(Modernizr.csstransforms) {
-        $header.stop(true, false).animate({scale: 1, translateX: 0}, {queue: false}, 100);
-      } else {
-        $header.stop(true, false).animate({scale: 1, right: 0}, {queue: false}, 100);
-      }
-
+        $header.stop(true, false).animate({right: '50%'}, {queue: false}, 100);
     } else {
-      toScroll = Math.max(scrollY * -1 * 3, -100 * 2.9);
-      console.log(toScroll);
-      //toScroll = (toScroll / ( -580 ) * 100;
-      if(Modernizr.csstransforms) {
-        $header.stop(true, false).animate({scale: 1, translateX: -1 * toScroll}, {queue: false}, 20);
-      } else {
-        $header.stop(true, false).animate({scale: 1, right: toScroll}, {queue: false}, 30);
+      toScroll = Math.min(scrollY * 1 * 3, PUSH / 2);
+
+      toScroll = 50 - ( (toScroll / (PUSH)) * 100 );
+      console.log(toScroll + '%');
+
+      if (toScroll < 25) {
+        toScroll = 25; //nahhhhhh dog
       }
+
+      $header.stop(true, false).animate({right: toScroll + '%'}, {queue: false}, 30);
     }
 
-    if ( !scaledImage ) {
+    /*if ( !scaledImage ) {
         $header.find('hgroup h2').css({width: "50%"});
-    }
-    //cleanup
-    prevScrollY = window.scrollY;
-
+    }*/
   });
 
-    function normalizeXY(prevSY, currSY) {
-
-      currSY = currSY === 0 ? 1 : currSY;
-
-      return firstBlockPadding / currSY;
-    }
 });
