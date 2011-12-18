@@ -744,7 +744,7 @@ header ul li.active a span:before {
 		margin: 0 2%;
 	}
   #header {
-    right: 0;
+    width: 100%;
     margin: 0;
     position: static;
   }
