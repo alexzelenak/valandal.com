@@ -494,7 +494,8 @@ label.ss-q-title {
 .rsvp-name input,
 .rsvp-email input,
 .rsvp-party input {
-    box-shadow: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
     padding: 6px 10px 4px;
 	border: 1px solid #DDD;
 	font-family: 'sans';
@@ -767,6 +768,15 @@ header ul li.active a span:before {
 		width: 100%;
 		margin: 0;
 	}
+  
+  	.rsvp-name input,
+	.rsvp-email input {
+  		box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+    }
   
 	#page-registry ul li {
 		float: none;
