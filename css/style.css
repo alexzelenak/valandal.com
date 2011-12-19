@@ -493,7 +493,7 @@ label.ss-q-title {
 
 .rsvp-name input,
 .rsvp-email input,
-.rsvp-party .rsvp-party-other input {
+.rsvp-party input.ss-q-other {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     padding: 6px 10px 4px;
@@ -509,7 +509,7 @@ label.ss-q-title {
 
 .rsvp-name input:hover,
 .rsvp-email input:hover,
-.rsvp-party .rsvp-party-other input:hover {
+.rsvp-party input.ss-q-other:hover {
 	border: 1px solid #69DAD1;
 	background-color: #FFF;
 }
