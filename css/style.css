@@ -495,7 +495,6 @@ label.ss-q-title {
 .rsvp-email input,
 .rsvp-party input {
     padding: 6px 10px 4px;
-    background-color: transparent;
 	border: 1px solid #DDD;
 	font-family: 'sans';
 	font-size: 16px;
@@ -743,36 +742,38 @@ header ul li.active a span:before {
 		width: auto;
 		margin: 0 2%;
 	}
-  #header {
-    width: 100%;
-    margin: 0;
-    position: static;
-  }
+	#header {
+		width: 100%;
+		margin: 0;
+		position: static;
+	}
   
-  label.ss-q-title,
-  label.ss-q-help,
-  .rsvp-name input,
-  .rsvp-email input,
-  .rsvp-attend ul,
-  .rsvp-party ul,
-  .rsvp-submit input {
-  	width: 100%;
-  	margin: 0 inherit inherit 0;
-  }
+	label.ss-q-title,
+	label.ss-q-help,
+	.rsvp-name input,
+	.rsvp-email input,
+	.rsvp-attend ul,
+	.rsvp-party ul,
+	.rsvp-submit input {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
   
-  #page-registry ul li {
-  	float: none;
-  	width: 50%;
-  	margin: 0 auto;
-  }
+	#page-registry ul li {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
   
-  #page-registry ul li br {
-  	display: none;
-  }
+	#page-registry ul li br {
+		display: none;
+	}
   
-  .rsvp-submit {
-  	padding: 0;
-  }
+	.rsvp-submit {
+		padding: 0;
+	}
 }
 
 @media only screen and (min-width: 480px) {}
