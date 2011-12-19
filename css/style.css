@@ -93,7 +93,7 @@ td { vertical-align: top; }
 
 a,
 a:visited {
-	color: #69DAD1;
+	color: #3DAEB6;
 	text-decoration: none;
 }
 
@@ -247,7 +247,7 @@ header ul li a:visited {
 	float: left;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #6AD9D1;
+	color: #3DAEB6;
 	padding: 16px 20px 14px;
 	text-shadow: 0 1px #FFF;
 	background-color: rgba(255, 255, 255, 0.55);
@@ -264,10 +264,10 @@ header ul li a:hover {
 
 header ul li.active a,
 header ul li.active a:visited {
-	background-color: #6AD9D1;
+	background-color: #3DAEB6;
 	color: #FFF;
 	text-shadow: 0 1px rgba(0,0,0,0.25);
-	border-bottom: 1px solid #6AD9D1;
+	border-bottom: 1px solid #3DAEB6;
 	cursor: default;
 }
 
@@ -354,7 +354,7 @@ article h2 {
 	font-weight: normal;
 	text-align: center;
 	text-shadow: 0 1px #FFF;
-	color: #6AD9D1;
+	color: #3DAEB6;
 	font-size: 30px;
 	text-transform: uppercase;
 	/*
@@ -510,7 +510,7 @@ label.ss-q-title {
 .rsvp-name input:hover,
 .rsvp-email input:hover,
 .rsvp-party input.ss-q-other:hover {
-	border: 1px solid #69DAD1;
+	border: 1px solid #3DAEB6;
 	background-color: #FFF;
 }
 
@@ -532,7 +532,7 @@ label.ss-q-title {
 	font-family: 'sans';
 	float: left;
 	margin-left: -22px;
-	background-color: #6AD9D1;
+	background-color: #3DAEB6;
 	color: #FFF;
 	border: 1px solid #FFF;
 	padding: 10px 20px;
@@ -560,7 +560,7 @@ label.ss-q-title {
 
 #page-registry ul li a {
 	display: block;
-	padding: 20px;
+	padding: 15px;
 }
 
 #page-registry ul li a img {
