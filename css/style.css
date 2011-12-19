@@ -327,10 +327,10 @@ footer {
 }
 
 #muah img.tween {
-	-webkit-transform: scale(1.2) translate(-20px,-20px);
-    -moz-transform: scale(1.2) translate(-20px,-20px);
-    -o-transform: scale(1.2) translate(-20px,-20px);
-    -ms-transform: scale(1.2) translate(-20px,-20px);
+	-webkit-transform: scale(1.2) translate(20px,0);
+    -moz-transform: scale(1.2) translate(20px,0);
+    -o-transform: scale(1.2) translate(20px,0);
+    -ms-transform: scale(1.2) translate(20px,0);
     opacity: 1;
 }
 
