@@ -704,6 +704,9 @@ header ul li.active a span:before {
 }
 
 @media screen and (max-width: 800px) {
+	body {
+		font-size: 11px;
+	}	
 	#top,
 	#top-inner,
 	footer,
@@ -767,12 +770,17 @@ header ul li.active a span:before {
 		margin: 0 auto;
 	}
   
+  	article h2:before,
 	#page-registry ul li br {
 		display: none;
 	}
   
 	.rsvp-submit {
 		padding: 0;
+	}
+	
+	article ul li.first {
+		font-size: 13px;
 	}
 }
 
