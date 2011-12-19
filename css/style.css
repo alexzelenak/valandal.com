@@ -91,8 +91,9 @@ td { vertical-align: top; }
     margin: 0;
 }
 
-a {
-	color: #666;
+a,
+a:visited {
+	color: #69DAD1;
 	text-decoration: none;
 }
 
@@ -373,7 +374,6 @@ article ul {
 article ul li.first {
 	color: #666;
 	font-size: 15px;
-	margin-bottom: 10px;
 }
 
 #page-rsvp {
@@ -528,6 +528,7 @@ label.ss-q-title {
 }
 
 .rsvp-submit input {
+	-webkit-border-radius: 0;
 	font-family: 'sans';
 	float: left;
 	margin-left: -22px;
