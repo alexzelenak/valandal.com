@@ -494,6 +494,7 @@ label.ss-q-title {
 .rsvp-name input,
 .rsvp-email input,
 .rsvp-party input {
+    box-shadow: none;
     padding: 6px 10px 4px;
 	border: 1px solid #DDD;
 	font-family: 'sans';
@@ -744,13 +745,16 @@ header ul li.active a span:before {
 	#pages {
 		width: auto;
 		margin: 0 2%;
+		padding-bottom: 200px;
 	}
 	#header {
 		width: 100%;
 		margin: 0;
 		position: static;
 	}
-  
+  	article {
+  		margin-bottom: 20px;
+  	}
 	label.ss-q-title,
 	label.ss-q-help,
 	.rsvp-name input,
