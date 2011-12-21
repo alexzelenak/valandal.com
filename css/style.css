@@ -447,6 +447,11 @@ label.ss-q-help {
     width: 50%;
 }
 
+.ie6 label.ss-q-title,
+.ie6 label.ss-q-help {
+	width: 40%;
+}
+
 label.ss-q-title {
 	padding: 8px 0 0;
 }
