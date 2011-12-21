@@ -339,6 +339,7 @@ article {
 	margin-bottom: 50px;
 	padding: 30px;
 	border: 10px solid #FFF;
+	background-color: #FFFCE8;
 	background-color: rgba(255,252,232,0.75);
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -453,7 +454,6 @@ label.ss-q-title {
 }
 
 .rsvp-party ul {
-	margin-top: -30px;
 }
 
 .rsvp-attend ul li,
