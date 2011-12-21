@@ -134,6 +134,10 @@ body {
 	height: 350px
 }
 
+.ie6 #page-info iframe {
+	width: 80%;
+}
+
 #top,
 footer,
 #muah {
@@ -143,7 +147,9 @@ footer,
 
 .ie6 #top,
 .ie6 footer,
-.ie6 #muah {
+.ie6 #muah,
+.ie6 header,
+.ie7 header {
 	position: absolute; /*ie6 and above*/
 }
 
@@ -196,10 +202,6 @@ header {
 	top: 0;
 	right: 50%;
 	margin: 0 -25%;
-}
-
-.ie6 header {
-	position: absolute;
 }
 
 header h1 {
@@ -568,6 +570,11 @@ label.ss-q-title {
 #page-registry ul li {
 	float: left;
 	width: 33.33%;
+}
+
+.ie6 #page-registry ul li,
+.ie7 #page-registry ul li {
+	width: 30%;
 }
 
 #page-registry ul li a {
