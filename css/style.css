@@ -574,7 +574,7 @@ label.ss-q-title {
 
 .ie6 #page-registry ul li,
 .ie7 #page-registry ul li {
-	width: 30%;
+	width: 30% !important;
 }
 
 #page-registry ul li a {
