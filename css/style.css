@@ -135,7 +135,7 @@ body {
 }
 
 .ie6 #page-info iframe {
-	width: 80%;
+	width: 85%;
 }
 
 #top,
@@ -574,7 +574,7 @@ label.ss-q-title {
 
 .ie6 #page-registry ul li,
 .ie7 #page-registry ul li {
-	width: 30% !important;
+	width: 32%;
 }
 
 #page-registry ul li a {
@@ -590,6 +590,10 @@ label.ss-q-title {
 	-moz-transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+}
+
+.ie6 #page-registry ul li a img {
+	width: 32%;
 }
 
 #page-registry ul li a:hover img {
