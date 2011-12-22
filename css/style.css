@@ -592,8 +592,8 @@ label.ss-q-title {
 	transition: all .3s ease-in-out;
 }
 
-.ie6 #page-registry ul li a img {
-	width: 32%;
+.ie6 #page-registry ul li a {
+	float: left;
 }
 
 #page-registry ul li a:hover img {
