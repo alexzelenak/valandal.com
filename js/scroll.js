@@ -22,8 +22,11 @@ $(function() {
   }
 
   var PUSH = 580;
+  var to, prevToScroll;
   $doc.scroll(function(e) {
     scrollY = window.scrollY;
+    
+    console.log(scrollY);
 
     if (scrollY < 10) {
         $header.stop(true, false).animate({right: '50%'}, {queue: false}, 100);
@@ -31,18 +34,18 @@ $(function() {
       toScroll = Math.min(scrollY * 1 * 3, PUSH / 2);
 
       toScroll = 50 - ( (toScroll / (PUSH)) * 100 );
-      console.log(toScroll + '%');
 
       if (toScroll < 25) {
         toScroll = 25; //nahhhhhh dog
       }
-
-      $header.stop(true, false).animate({right: toScroll + '%'}, {queue: false}, 30);
+      
+      if(prevToScroll !== toScroll) {
+        $header.stop(true, false).animate({right: toScroll + '%'}, {queue: false}, toScroll === 25 ? 50 : 30);
+      }
+      
+      prevToScroll = toScroll;
     }
-
-    /*if ( !scaledImage ) {
-        $header.find('hgroup h2').css({width: "50%"});
-    }*/
+    
   });
 
 });
