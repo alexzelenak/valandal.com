@@ -600,6 +600,10 @@ label.ss-q-title {
 	opacity: 1;
 }
 
+.page-info-map {
+	margin-bottom: 30px;
+}
+
 /* Top Left Corner Effect */
 article h2:before {
 	background: transparent url(../img/bg.gif);
